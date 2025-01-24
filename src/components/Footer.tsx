@@ -38,22 +38,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Serviços</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/reembolso" className="hover:text-accent">
+                <Link to="/planos" className="hover:text-accent">
                   Reembolso
                 </Link>
               </li>
               <li>
-                <Link to="/cancelamento" className="hover:text-accent">
+                <Link to="/fale-conosco" className="hover:text-accent">
                   Cancelamento
                 </Link>
               </li>
               <li>
-                <Link to="/ouvidoria" className="hover:text-accent">
+                <Link to="/fale-conosco" className="hover:text-accent">
                   Ouvidoria
                 </Link>
               </li>
               <li>
-                <Link to="/imposto-renda" className="hover:text-accent">
+                <Link to="/planos" className="hover:text-accent">
                   Imposto de Renda
                 </Link>
               </li>
@@ -65,27 +65,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/compliance" className="hover:text-accent">
+                <Link to="/fale-conosco" className="hover:text-accent">
                   Compliance
                 </Link>
               </li>
               <li>
-                <Link to="/questionario-ans" className="hover:text-accent">
+                <Link to="/noticias" className="hover:text-accent">
                   Questionário ANS
                 </Link>
               </li>
               <li>
-                <Link to="/prestadores-substituidos" className="hover:text-accent">
+                <Link to="/rede-credenciada" className="hover:text-accent">
                   Prestadores Substituídos
                 </Link>
               </li>
               <li>
-                <Link to="/guia-tiss" className="hover:text-accent">
+                <Link to="/noticias" className="hover:text-accent">
                   Guia TISS
                 </Link>
               </li>
               <li>
-                <Link to="/publicacoes" className="hover:text-accent">
+                <Link to="/noticias" className="hover:text-accent">
                   Publicações
                 </Link>
               </li>
