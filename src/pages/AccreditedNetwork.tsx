@@ -44,6 +44,14 @@ const AccreditedNetwork = () => {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Hospital São Lucas</h3>
+              <div className="mb-4">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Cardiologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Ortopedia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Neurologia</span>
+                </div>
+              </div>
               <p className="text-gray-600 mb-2">
                 Rua das Flores, 123 - Centro
               </p>
@@ -55,6 +63,14 @@ const AccreditedNetwork = () => {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Clínica Santa Maria</h3>
+              <div className="mb-4">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Pediatria</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Ginecologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Dermatologia</span>
+                </div>
+              </div>
               <p className="text-gray-600 mb-2">
                 Av. Paulista, 1000 - Bela Vista
               </p>
@@ -68,6 +84,14 @@ const AccreditedNetwork = () => {
               <h3 className="text-xl font-semibold mb-4">
                 Centro Médico Esperança
               </h3>
+              <div className="mb-4">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Oftalmologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Otorrinolaringologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Urologia</span>
+                </div>
+              </div>
               <p className="text-gray-600 mb-2">
                 Rua Augusta, 500 - Consolação
               </p>
@@ -79,6 +103,14 @@ const AccreditedNetwork = () => {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Hospital Vida</h3>
+              <div className="mb-4">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Oncologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Endocrinologia</span>
+                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Psiquiatria</span>
+                </div>
+              </div>
               <p className="text-gray-600 mb-2">
                 Av. Brasil, 789 - Jardins
               </p>
