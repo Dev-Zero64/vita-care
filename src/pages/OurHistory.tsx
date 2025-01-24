@@ -13,7 +13,7 @@ const OurHistory = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="/photo-1527576539890-dfa815648363"
+                  src="https://media.istockphoto.com/id/1473559425/pt/foto/female-medical-practitioner-reassuring-a-patient.jpg?s=612x612&w=0&k=20&c=w-71weobkyo_Tc-CNNugxwuhZm_ZpVgqGmyg25DIkBc="
                   alt="VitaCare Saúde História"
                   className="rounded-lg w-full h-auto"
                 />

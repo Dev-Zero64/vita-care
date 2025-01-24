@@ -12,7 +12,7 @@ const Partners = () => {
           <Card>
             <CardContent className="p-6 text-center">
               <img
-                src="/photo-1581092795360-fd1ca04f0952"
+                src="https://media.istockphoto.com/id/1312706413/pt/foto/modern-hospital-building.jpg?s=612x612&w=0&k=20&c=QtiuwaHxGTvb2Z7AqNo3YA--gkxojDXTzKvb87CzSFY="
                 alt="Hospital Parceiro"
                 className="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
               />
@@ -25,7 +25,7 @@ const Partners = () => {
           <Card>
             <CardContent className="p-6 text-center">
               <img
-                src="/photo-1483058712412-4245e9b90334"
+                src="https://media.istockphoto.com/id/1354172647/pt/foto/medical-research-laboratory-portrait-of-a-beautiful-female-scientist-in-goggles-using-micro.jpg?s=612x612&w=0&k=20&c=pzNSkwIWkG7XNMsqyJ_COswfwxbz70CGa9fdwK79l-A="
                 alt="Laboratório Parceiro"
                 className="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
               />
@@ -40,7 +40,7 @@ const Partners = () => {
           <Card>
             <CardContent className="p-6 text-center">
               <img
-                src="/photo-1488590528505-98d2b5aba04b"
+                src="https://media.istockphoto.com/id/1319031310/pt/foto/doctor-writing-a-medical-prescription.jpg?s=612x612&w=0&k=20&c=_Eh9iQY19uLOaksMSlc-alskCFWpP5A-1Cce9P0PIwA="
                 alt="Clínica Parceira"
                 className="w-32 h-32 mx-auto mb-4 rounded-full object-cover"
               />
