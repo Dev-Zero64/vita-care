@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    image: "https://midias.agazeta.com.br/2024/08/05/edicasea-coqueluche-e-uma-doenca-que-costuma-atingir-na-maioria-das-vezes-as-criancas-imagem-fizkes--shutterstock-6sug6fl0rgo.jpg",
     title: "Cuidando de você e sua família",
     description: "Planos de saúde personalizados para cada momento da sua vida",
   },
