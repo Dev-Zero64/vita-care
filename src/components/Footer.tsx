@@ -11,11 +11,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Navegação</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/institucional" className="hover:text-accent">
-                  Institucional
-                </Link>
-              </li>
-              <li>
                 <Link to="/planos" className="hover:text-accent">
                   Planos
                 </Link>

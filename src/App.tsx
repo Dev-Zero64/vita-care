@@ -13,6 +13,7 @@ import Partners from "./pages/Partners";
 import Plans from "./pages/Plans";
 import AccreditedNetwork from "./pages/AccreditedNetwork";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/noticias" element={<News />} />
