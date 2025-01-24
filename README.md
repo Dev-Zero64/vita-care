@@ -1,69 +1,75 @@
-# Welcome to your Lovable project
+# Vita Care Plano de Saúde
 
-## Project info
+Este é o repositório do projeto Vita Care Plano de Saúde, uma aplicação web desenvolvida com React e Vite. O objetivo deste projeto é fornecer uma plataforma para a gestão de planos de saúde, oferecendo informações sobre planos, notícias, contato e muito mais.
 
-**URL**: https://lovable.dev/projects/e2ac07b4-07bd-47d0-8e76-98476489b9b4
+## Tecnologias Utilizadas
 
-## How can I edit this code?
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite**: Ferramenta de build rápida para projetos web modernos.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+- **Tailwind CSS**: Framework CSS para estilização rápida e eficiente.
+- **Radix UI**: Componentes acessíveis e descomplicados para React.
+- **React Router**: Biblioteca para roteamento em aplicações React.
+- **React Query**: Biblioteca para gerenciamento de estado assíncrono.
+- **Lucide Icons**: Conjunto de ícones para React.
 
-There are several ways of editing your application.
+## Estrutura do Projeto
 
-**Use Lovable**
+- **src/components**: Componentes reutilizáveis da aplicação.
+- **src/pages**: Páginas da aplicação.
+- **src/hooks**: Hooks personalizados.
+- **src/lib**: Funções utilitárias.
+- **src/styles**: Arquivos de estilo.
+- **src/App.tsx**: Componente principal da aplicação.
+- **src/main.tsx**: Ponto de entrada da aplicação.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e2ac07b4-07bd-47d0-8e76-98476489b9b4) and start prompting.
+## Instalação
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/vita-care-plano-saude.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd vita-care-plano-saude
+    ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-**Use your preferred IDE**
+## Uso
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Para iniciar o servidor de desenvolvimento, execute:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Para criar uma build de produção, execute:
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Para visualizar a build de produção, execute:
+```bash
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## Scripts Disponíveis
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `dev`: Inicia o servidor de desenvolvimento.
+- `build`: Cria uma build de produção.
+- `preview`: Visualiza a build de produção.
+- `lint`: Executa o linter para verificar problemas no código.
 
-## What technologies are used for this project?
+## Contribuição
 
-This project is built with .
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Licença
 
-## How can I deploy this project?
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-Simply open [Lovable](https://lovable.dev/projects/e2ac07b4-07bd-47d0-8e76-98476489b9b4) and click on Share -> Publish.
+## Contato
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Para mais informações, entre em contato com [seu-email@dominio.com](mailto:seu-email@dominio.com).
