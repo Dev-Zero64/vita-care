@@ -36,6 +36,60 @@ A plataforma é segura, intuitiva e está disponível para todos os nossos benef
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
     date: "2024-03-05",
   },
+  {
+    id: 4,
+    title: "Novo aplicativo VitaCare",
+    content: `Estamos muito empolgados em anunciar o lançamento do novo aplicativo VitaCare! Desenvolvido com as mais modernas tecnologias, nosso app traz uma experiência completamente renovada para facilitar o acesso aos nossos serviços.
+
+Com o novo aplicativo, você pode:
+- Agendar consultas com apenas alguns cliques
+- Acessar sua carteirinha digital
+- Localizar médicos e clínicas próximas
+- Visualizar histórico de atendimentos
+- Solicitar reembolsos de forma digital
+- Receber notificações sobre agendamentos e novidades
+
+O aplicativo está disponível gratuitamente para iOS e Android. Faça o download agora e tenha a VitaCare na palma da sua mão!`,
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    date: "2024-03-01",
+  },
+  {
+    id: 5,
+    title: "Campanha de Vacinação 2024",
+    content: `A VitaCare Saúde dá início à sua Campanha de Vacinação 2024, uma iniciativa fundamental para a prevenção de doenças e proteção da saúde de nossos beneficiários.
+
+Nossa campanha oferece:
+- Vacinas contra gripe (Influenza)
+- Todas as vacinas do calendário nacional
+- Equipe especializada em vacinação
+- Pontos de vacinação em diversas regiões
+- Agendamento online para evitar filas
+
+Os pontos de vacinação funcionarão de segunda a sábado, das 8h às 18h. Beneficiários VitaCare têm desconto especial em todas as vacinas particulares.
+
+Proteja-se e proteja quem você ama. Vacinar é um ato de amor e responsabilidade social.`,
+    image: "https://images.unsplash.com/photo-1584515933487-779824d29309",
+    date: "2024-02-28",
+  },
+  {
+    id: 6,
+    title: "Parceria com novo hospital",
+    content: `É com grande satisfação que anunciamos nossa mais nova parceria com o Hospital São Lucas, uma das instituições mais respeitadas do país na área da saúde.
+
+O Hospital São Lucas passa a integrar nossa rede premium de atendimento, oferecendo:
+- Centro cirúrgico de última geração
+- UTI adulto e pediátrica
+- Pronto-socorro 24 horas
+- Centro de diagnóstico completo
+- Equipe médica altamente qualificada
+- Atendimento humanizado
+
+Esta parceria representa mais um passo importante no compromisso da VitaCare em oferecer serviços de saúde da mais alta qualidade aos nossos beneficiários.
+
+O Hospital São Lucas está localizado em área privilegiada e conta com amplo estacionamento e fácil acesso por transporte público.`,
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
+    date: "2024-02-25",
+  },
 ];
 
 const NewsDetail = () => {
