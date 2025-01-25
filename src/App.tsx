@@ -13,6 +13,17 @@ import Partners from "./pages/Partners";
 import Plans from "./pages/Plans";
 import AccreditedNetwork from "./pages/AccreditedNetwork";
 import Contact from "./pages/Contact";
+import SecondWayBill from "./pages/SecondWayBill";
+import SimulatePlan from "./pages/SimulatePlan";
+import Reimbursement from "./pages/Reimbursement";
+import Cancellation from "./pages/Cancellation";
+import Ombudsman from "./pages/Ombudsman";
+import IncomeTax from "./pages/IncomeTax";
+import Compliance from "./pages/Compliance";
+import AnsQuestionnaire from "./pages/AnsQuestionnaire";
+import ReplacedProviders from "./pages/ReplacedProviders";
+import TissGuide from "./pages/TissGuide";
+import Publications from "./pages/Publications";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -35,6 +46,17 @@ const App = () => (
           <Route path="/planos" element={<Plans />} />
           <Route path="/rede-credenciada" element={<AccreditedNetwork />} />
           <Route path="/fale-conosco" element={<Contact />} />
+          <Route path="/segunda-via" element={<SecondWayBill />} />
+          <Route path="/simular-plano" element={<SimulatePlan />} />
+          <Route path="/reembolso" element={<Reimbursement />} />
+          <Route path="/cancelamento" element={<Cancellation />} />
+          <Route path="/ouvidoria" element={<Ombudsman />} />
+          <Route path="/imposto-de-renda" element={<IncomeTax />} />
+          <Route path="/compliance" element={<Compliance />} />
+          <Route path="/questionario-ans" element={<AnsQuestionnaire />} />
+          <Route path="/prestadores-substituidos" element={<ReplacedProviders />} />
+          <Route path="/guia-tiss" element={<TissGuide />} />
+          <Route path="/publicacoes" element={<Publications />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

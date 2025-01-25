@@ -6,7 +6,7 @@ const ActionButtons = () => {
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Link
-          to="/planos"
+          to="/segunda-via"
           className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
         >
           <FileText className="h-12 w-12 text-primary mb-4" />
@@ -28,7 +28,7 @@ const ActionButtons = () => {
         </Link>
 
         <Link
-          to="/planos"
+          to="/simular-plano"
           className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
         >
           <Calculator className="h-12 w-12 text-primary mb-4" />
