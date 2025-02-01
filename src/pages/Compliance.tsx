@@ -10,16 +10,22 @@ const Compliance = () => {
         <div className="bg-white rounded-lg shadow-lg p-6">
           <div className="space-y-6">
             <section>
-              <h2 className="text-xl font-semibold mb-4">Programa de Compliance</h2>
+              <h2 className="text-xl font-semibold mb-4">
+                Programa de Compliance
+              </h2>
               <p className="text-gray-600">
-                O Programa de Compliance da VitaCare Saúde tem como objetivo garantir a conformidade com as leis e regulamentos do setor de saúde suplementar, promovendo a ética e a transparência em todas as nossas operações.
+                O Programa de Compliance da VitaCare Saúde tem como objetivo
+                garantir a conformidade com as leis e regulamentos do setor de
+                saúde suplementar, promovendo a ética e a transparência em todas
+                as nossas operações.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold mb-4">Canal de Denúncias</h2>
               <p className="text-gray-600 mb-4">
-                Caso queira reportar alguma irregularidade ou violação do nosso código de ética, utilize nosso canal de denúncias:
+                Caso queira reportar alguma irregularidade ou violação do nosso
+                código de ética, utilize nosso canal de denúncias:
               </p>
               <div className="space-y-4 max-w-md">
                 <input

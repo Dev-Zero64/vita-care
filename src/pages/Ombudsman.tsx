@@ -9,7 +9,8 @@ const Ombudsman = () => {
         <h1 className="text-3xl font-bold text-primary mb-6">Ouvidoria</h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-600 mb-6">
-            A Ouvidoria é um canal de comunicação entre você e a VitaCare Saúde. Estamos aqui para ouvir suas sugestões, reclamações ou elogios.
+            A Ouvidoria é um canal de comunicação entre você e a VitaCare Saúde.
+            Estamos aqui para ouvir suas sugestões, reclamações ou elogios.
           </p>
           <div className="space-y-4 max-w-md">
             <input

@@ -6,10 +6,13 @@ const IncomeTax = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-primary mb-6">Imposto de Renda</h1>
+        <h1 className="text-3xl font-bold text-primary mb-6">
+          Imposto de Renda
+        </h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-600 mb-6">
-            Aqui você pode gerar seu demonstrativo anual para declaração de Imposto de Renda.
+            Aqui você pode gerar seu demonstrativo anual para declaração de
+            Imposto de Renda.
           </p>
           <div className="space-y-4 max-w-md">
             <input

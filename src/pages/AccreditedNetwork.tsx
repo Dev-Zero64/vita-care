@@ -4,14 +4,61 @@ import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { providers } from "@/lib/providers";
+
+// Componente reutilizável para exibir um prestador da rede credenciada
+const ProviderCard = ({
+  name,
+  specialties,
+  address,
+  city,
+  phone,
+}: {
+  name: string;
+  specialties: string[];
+  address: string;
+  city: string;
+  phone: string;
+}) => {
+  return (
+    <Card className="transition-transform hover:scale-[1.02]">
+      <CardContent className="p-6 space-y-4">
+        <h3 className="text-xl font-semibold">{name}</h3>
+        <div>
+          <h4 className="text-sm font-medium text-gray-600 mb-2">
+            Especialidades:
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {specialties.map((specialty, index) => (
+              <span
+                key={index}
+                className="bg-primary/10 text-primary text-sm px-2 py-1 rounded"
+              >
+                {specialty}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-gray-600">{address}</p>
+          <p className="text-gray-600">{city}</p>
+          <p className="text-gray-600">Tel: {phone}</p>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
 
 const AccreditedNetwork = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Rede Credenciada</h1>
-        
+        <h1 className="text-3xl font-bold text-center text-primary mb-8">
+          Rede Credenciada
+        </h1>
+
+        {/* Seção de busca */}
         <Card className="mb-8">
           <CardContent className="p-6">
             <div className="grid md:grid-cols-3 gap-4">
@@ -22,102 +69,25 @@ const AccreditedNetwork = () => {
                 <Input type="text" placeholder="Digite a especialidade" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Cidade
-                </label>
+                <label className="block text-sm font-medium mb-2">Cidade</label>
                 <Input type="text" placeholder="Digite a cidade" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">
-                  Bairro
-                </label>
+                <label className="block text-sm font-medium mb-2">Bairro</label>
                 <Input type="text" placeholder="Digite o bairro" />
               </div>
             </div>
-            <Button className="mt-4 w-full md:w-auto">
+            <Button className="mt-4 w-full md:w-auto transition-all hover:bg-primary-dark">
               <Search className="mr-2 h-4 w-4" /> Buscar
             </Button>
           </CardContent>
         </Card>
 
+        {/* Lista de prestadores */}
         <div className="grid md:grid-cols-2 gap-6">
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Hospital São Lucas</h3>
-              <div className="mb-4">
-                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Cardiologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Ortopedia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Neurologia</span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-2">
-                Rua das Flores, 123 - Centro
-              </p>
-              <p className="text-gray-600 mb-2">São Paulo - SP</p>
-              <p className="text-gray-600">Tel: (11) 3333-4444</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Clínica Santa Maria</h3>
-              <div className="mb-4">
-                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Pediatria</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Ginecologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Dermatologia</span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-2">
-                Av. Paulista, 1000 - Bela Vista
-              </p>
-              <p className="text-gray-600 mb-2">São Paulo - SP</p>
-              <p className="text-gray-600">Tel: (11) 4444-5555</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">
-                Centro Médico Esperança
-              </h3>
-              <div className="mb-4">
-                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Oftalmologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Otorrinolaringologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Urologia</span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-2">
-                Rua Augusta, 500 - Consolação
-              </p>
-              <p className="text-gray-600 mb-2">São Paulo - SP</p>
-              <p className="text-gray-600">Tel: (11) 5555-6666</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Hospital Vida</h3>
-              <div className="mb-4">
-                <h4 className="text-sm font-medium text-gray-600 mb-2">Especialidades:</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Oncologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Endocrinologia</span>
-                  <span className="bg-primary/10 text-primary text-sm px-2 py-1 rounded">Psiquiatria</span>
-                </div>
-              </div>
-              <p className="text-gray-600 mb-2">
-                Av. Brasil, 789 - Jardins
-              </p>
-              <p className="text-gray-600 mb-2">São Paulo - SP</p>
-              <p className="text-gray-600">Tel: (11) 6666-7777</p>
-            </CardContent>
-          </Card>
+          {providers.map((provider, index) => (
+            <ProviderCard key={index} {...provider} />
+          ))}
         </div>
       </main>
       <Footer />

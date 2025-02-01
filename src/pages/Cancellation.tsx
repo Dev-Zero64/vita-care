@@ -9,7 +9,8 @@ const Cancellation = () => {
         <h1 className="text-3xl font-bold text-primary mb-6">Cancelamento</h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-600 mb-6">
-            Para solicitar o cancelamento do seu plano, preencha o formulário abaixo:
+            Para solicitar o cancelamento do seu plano, preencha o formulário
+            abaixo:
           </p>
           <div className="space-y-4 max-w-md">
             <input

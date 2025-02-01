@@ -2,62 +2,72 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+// Componente reutilizável para exibir valores
+const ValueItem = ({ text }: { text: string }) => {
+  return (
+    <li className="flex items-center space-x-2 transition-transform hover:translate-x-2">
+      <span className="w-2 h-2 bg-primary rounded-full"></span>
+      <span>{text}</span>
+    </li>
+  );
+};
+
 const MissionValues = () => {
+  const values = [
+    "Ética e transparência em todas as relações",
+    "Inovação constante em processos e serviços",
+    "Compromisso com a qualidade",
+    "Responsabilidade social e ambiental",
+    "Valorização das pessoas",
+    "Foco no beneficiário",
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Missão e Valores</h1>
+        <h1 className="text-3xl font-bold text-primary text-center mb-8">
+          Missão e Valores
+        </h1>
+
+        {/* Missão e Visão */}
         <div className="grid md:grid-cols-2 gap-8">
-          <Card>
-            <CardContent className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Nossa Missão</h2>
-              <p className="text-lg">
-                Proporcionar acesso à saúde de qualidade, promovendo o bem-estar e
-                a qualidade de vida dos nossos beneficiários através de um
+          <Card className="transition-transform hover:scale-[1.02]">
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold text-primary">
+                Nossa Missão
+              </h2>
+              <p className="text-lg text-gray-700">
+                Proporcionar acesso à saúde de qualidade, promovendo o bem-estar
+                e a qualidade de vida dos nossos beneficiários através de um
                 atendimento humanizado e soluções inovadoras.
               </p>
             </CardContent>
           </Card>
-          <Card>
-            <CardContent className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">Nossa Visão</h2>
-              <p className="text-lg">
-                Ser reconhecida como a operadora de saúde mais inovadora e humana
-                do Brasil, referência em qualidade de atendimento e satisfação dos
-                beneficiários.
+          <Card className="transition-transform hover:scale-[1.02]">
+            <CardContent className="p-6 space-y-4">
+              <h2 className="text-2xl font-semibold text-primary">
+                Nossa Visão
+              </h2>
+              <p className="text-lg text-gray-700">
+                Ser reconhecida como a operadora de saúde mais inovadora e
+                humana do Brasil, referência em qualidade de atendimento e
+                satisfação dos beneficiários.
               </p>
             </CardContent>
           </Card>
         </div>
-        <Card className="mt-8">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">Nossos Valores</h2>
+
+        {/* Valores */}
+        <Card className="mt-8 transition-transform hover:scale-[1.02]">
+          <CardContent className="p-6 space-y-4">
+            <h2 className="text-2xl font-semibold text-primary">
+              Nossos Valores
+            </h2>
             <ul className="grid md:grid-cols-2 gap-4 text-lg">
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Ética e transparência em todas as relações</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Inovação constante em processos e serviços</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Compromisso com a qualidade</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Responsabilidade social e ambiental</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Valorização das pessoas</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                <span>Foco no beneficiário</span>
-              </li>
+              {values.map((value, index) => (
+                <ValueItem key={index} text={value} />
+              ))}
             </ul>
           </CardContent>
         </Card>

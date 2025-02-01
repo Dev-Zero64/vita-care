@@ -10,7 +10,9 @@ const Reimbursement = () => {
         <div className="bg-white rounded-lg shadow-lg p-6">
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-semibold mb-4">Solicitar Reembolso</h2>
+              <h2 className="text-xl font-semibold mb-4">
+                Solicitar Reembolso
+              </h2>
               <div className="space-y-4">
                 <input
                   type="text"

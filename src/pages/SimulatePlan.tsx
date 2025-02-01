@@ -6,7 +6,9 @@ const SimulatePlan = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-primary mb-6">Simule seu Plano</h1>
+        <h1 className="text-3xl font-bold text-primary mb-6">
+          Simule seu Plano
+        </h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>

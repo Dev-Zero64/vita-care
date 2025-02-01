@@ -54,7 +54,10 @@ const App = () => (
           <Route path="/imposto-de-renda" element={<IncomeTax />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/questionario-ans" element={<AnsQuestionnaire />} />
-          <Route path="/prestadores-substituidos" element={<ReplacedProviders />} />
+          <Route
+            path="/prestadores-substituidos"
+            element={<ReplacedProviders />}
+          />
           <Route path="/guia-tiss" element={<TissGuide />} />
           <Route path="/publicacoes" element={<Publications />} />
         </Routes>

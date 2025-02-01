@@ -6,10 +6,13 @@ const AnsQuestionnaire = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-primary mb-6">Questionário ANS</h1>
+        <h1 className="text-3xl font-bold text-primary mb-6">
+          Questionário ANS
+        </h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <p className="text-gray-600 mb-6">
-            Este questionário é uma exigência da Agência Nacional de Saúde Suplementar (ANS) para avaliar a qualidade dos serviços prestados.
+            Este questionário é uma exigência da Agência Nacional de Saúde
+            Suplementar (ANS) para avaliar a qualidade dos serviços prestados.
           </p>
           <div className="space-y-6">
             <div className="space-y-4">

@@ -26,31 +26,34 @@ Este é o repositório do projeto Vita Care Plano de Saúde, uma aplicação web
 ## Instalação
 
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/vita-care-plano-saude.git
-    ```
+   ```bash
+   git clone https://github.com/seu-usuario/vita-care-plano-saude.git
+   ```
 2. Navegue até o diretório do projeto:
-    ```bash
-    cd vita-care-plano-saude
-    ```
+   ```bash
+   cd vita-care-plano-saude
+   ```
 3. Instale as dependências:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Uso
 
 Para iniciar o servidor de desenvolvimento, execute:
+
 ```bash
 npm run dev
 ```
 
 Para criar uma build de produção, execute:
+
 ```bash
 npm run build
 ```
 
 Para visualizar a build de produção, execute:
+
 ```bash
 npm run preview
 ```
