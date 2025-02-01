@@ -8,18 +8,22 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 
-// Componente reutilizável para links de navegação
 const NavLink = ({
   to,
   children,
+  onClick,
+  className = "",
 }: {
   to: string;
   children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
 }) => {
   return (
     <Link
       to={to}
-      className="text-gray-600 hover:text-primary transition-colors"
+      className={`block text-gray-600 hover:text-primary transition-colors whitespace-nowrap ${className}`}
+      onClick={onClick}
       aria-label={typeof children === "string" ? children : undefined}
     >
       {children}
@@ -29,8 +33,8 @@ const NavLink = ({
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isInstitutionalOpen, setIsInstitutionalOpen] = useState(false);
 
-  // Dados do menu institucional
   const institutionalMenu = [
     { label: "Nossa História", to: "/nossa-historia" },
     { label: "Missão / Valores", to: "/missao-valores" },
@@ -38,17 +42,22 @@ const Navbar = () => {
     { label: "Parceiros", to: "/parceiros" },
   ];
 
+  const closeMenu = () => {
+    setIsOpen(false);
+    setIsInstitutionalOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4">
-        {/* Barra de navegação principal */}
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-primary">
+          <Link
+            to="/"
+            className="text-2xl font-bold text-primary whitespace-nowrap"
+          >
             VitaCare Saúde
           </Link>
 
-          {/* Botão de menu mobile */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none"
@@ -71,24 +80,22 @@ const Navbar = () => {
             </svg>
           </button>
 
-          {/* Menu desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            {/* Dropdown Institucional */}
+          <div className="hidden md:flex items-center gap-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 text-gray-600 hover:text-primary transition-colors">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-600 hover:text-primary transition-colors whitespace-nowrap">
                 <span>Institucional</span>
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white shadow-lg">
                 {institutionalMenu.map(({ label, to }, index) => (
-                  <DropdownMenuItem key={index}>
-                    <NavLink to={to}>{label}</NavLink>
+                  <DropdownMenuItem key={index} className="w-full">
+                    <NavLink to={to} className="px-4 py-2 w-full">
+                      {label}
+                    </NavLink>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-
-            {/* Links principais */}
             <NavLink to="/planos">Planos</NavLink>
             <NavLink to="/rede-credenciada">Rede Credenciada</NavLink>
             <NavLink to="/noticias">Notícias</NavLink>
@@ -99,14 +106,62 @@ const Navbar = () => {
         {/* Menu mobile */}
         <div
           className={`${
-            isOpen ? "block" : "hidden"
-          } md:hidden py-4 space-y-4 animate-fade-in`}
+            isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          } md:hidden overflow-hidden transition-all duration-300 ease-in-out`}
         >
-          <NavLink to="/institucional">Institucional</NavLink>
-          <NavLink to="/planos">Planos</NavLink>
-          <NavLink to="/rede-credenciada">Rede Credenciada</NavLink>
-          <NavLink to="/noticias">Notícias</NavLink>
-          <NavLink to="/fale-conosco">Fale Conosco</NavLink>
+          <div className="py-2 space-y-1">
+            <button
+              onClick={() => setIsInstitutionalOpen(!isInstitutionalOpen)}
+              className="flex items-center justify-between w-full px-4 py-2 text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors"
+            >
+              <span>Institucional</span>
+              <ChevronDown
+                className={`h-4 w-4 transition-transform duration-200 ${
+                  isInstitutionalOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            <div
+              className={`${
+                isInstitutionalOpen
+                  ? "max-h-screen opacity-100"
+                  : "max-h-0 opacity-0"
+              } overflow-hidden transition-all duration-300 ease-in-out bg-gray-50`}
+            >
+              {institutionalMenu.map(({ label, to }, index) => (
+                <NavLink
+                  key={index}
+                  to={to}
+                  onClick={closeMenu}
+                  className="px-4 py-2"
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+
+            <NavLink to="/planos" onClick={closeMenu} className="px-4 py-2">
+              Planos
+            </NavLink>
+            <NavLink
+              to="/rede-credenciada"
+              onClick={closeMenu}
+              className="px-4 py-2"
+            >
+              Rede Credenciada
+            </NavLink>
+            <NavLink to="/noticias" onClick={closeMenu} className="px-4 py-2">
+              Notícias
+            </NavLink>
+            <NavLink
+              to="/fale-conosco"
+              onClick={closeMenu}
+              className="px-4 py-2"
+            >
+              Fale Conosco
+            </NavLink>
+          </div>
         </div>
       </div>
     </nav>
